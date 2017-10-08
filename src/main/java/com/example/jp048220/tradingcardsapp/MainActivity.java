@@ -1,5 +1,6 @@
 package com.example.jp048220.tradingcardsapp;
 
+import android.support.design.internal.NavigationMenuView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout menuDrawerLayout;
     private ActionBarDrawerToggle menuToggle;
+    NavigationMenuView navigationMenuView;
 
 
     @Override
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         menuToggle.syncState();
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
     }
 
     @Override
